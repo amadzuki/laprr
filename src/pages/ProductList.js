@@ -1,7 +1,12 @@
 import React from 'react'
+import Navigation from '../components/Navigation'
 
 const ProductList = () => {
-  return <div>kulina test</div>
+  return (
+    <>
+      <Navigation></Navigation>
+    </>
+  )
 }
 
 export default ProductList
