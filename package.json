@@ -2,6 +2,7 @@
   "name": "kulina",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://amadzuki.github.io/03398241db64f386dc27bb8812419a9c0b329318/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
