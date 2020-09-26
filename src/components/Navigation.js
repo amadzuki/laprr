@@ -3,10 +3,10 @@ import styled from '@xstyled/styled-components'
 
 const NavigationStyled = styled.div`
   display: flex;
-  margin: 8px 0 0 8px;
+  margin: 16px 0 0 16px;
 `
 
-const IconImg = styled.img`
+const IconImg = styled.imgBox`
   height: 30px;
 `
 
@@ -17,21 +17,36 @@ const TextsGroup = styled.div`
 const LabelText = styled.p`
   font-family: primary;
   font-size: 8px;
-  margin: 0;
+  margin: 0 8px;
+  color: subText;
 `
 
 const LocationText = styled.p`
   font-family: primary;
   font-size: 16px;
+  margin: 0 8px;
+  color: mainText;
 `
 
 const Navigation = () => {
   return (
     <NavigationStyled>
-      <IconImg src='/icons/arrow-left.svg' alt='arrow left icon'></IconImg>
+      <IconImg
+        src={`${process.env.PUBLIC_URL}/icons/arrow-left.svg`}
+        alt='arrow left icon'
+      ></IconImg>
       <TextsGroup>
         <LabelText>ALAMAT PENGANTARAN</LabelText>
-        <LocationText>Tokopedia Tower</LocationText>
+        <LocationText>
+          <span>Tokopedia Tower</span>
+          <span>
+            <IconImg
+              src={`${process.env.PUBLIC_URL}/icons/arrow-down.svg`}
+              alt='arrow down icon'
+              height='16px'
+            />
+          </span>
+        </LocationText>
       </TextsGroup>
     </NavigationStyled>
   )
