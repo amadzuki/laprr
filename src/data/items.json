@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Fancy Fruity Toast",
+    "rating": 4.5,
+    "merchant": "by Kulina · Uptown Lunch",
+    "price": 35000,
+    "imagePath": "/foods/fancy-fruity-toast.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Snownbrown Cupcake",
+    "rating": 4.0,
+    "merchant": "by Kulina · D'Patisserie",
+    "price": 15000,
+    "imagePath": "/foods/snownbrown-cupcake.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Jalapenos Sandwich",
+    "rating": 5.0,
+    "merchant": "by Kulina · Downtown Lunch",
+    "price": 50000,
+    "imagePath": "/foods/jalapenos-sandwich.jpg"
+  }
+]
