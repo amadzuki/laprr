@@ -4,10 +4,13 @@
   "private": true,
   "homepage": "https://amadzuki.github.io/03398241db64f386dc27bb8812419a9c0b329318/",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@xstyled/styled-components": "^1.19.0",
+    "currency.js": "^2.0.3",
     "dayjs": "^1.8.36",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

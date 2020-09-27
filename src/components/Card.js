@@ -1,12 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@xstyled/styled-components'
+import IDR, { currency } from '../config/currency'
+import { Rating } from '@material-ui/lab'
 
 import { Text, SubText } from '../components/BaseStylings'
 
 const CardWrapper = styled.div`
   margin-bottom: 24px;
   max-width: 335px;
+  border-radius: 5px;
   box-shadow: 0 8px 10px 0 rgba(10, 31, 68, 0.1);
 `
 
@@ -31,6 +34,7 @@ const RatingNumber = styled(Text)`
 
 const RatingStars = styled.div`
   display: flex;
+  margin-left: 8px;
 `
 
 const ItemName = styled(Text)`
@@ -67,13 +71,23 @@ const Card = ({ item }) => {
       <CardImg src={process.env.PUBLIC_URL + item.imagePath} />
       <CardInfos>
         <RatingInfo>
-          <RatingNumber>{item.rating}</RatingNumber>
-          <RatingStars></RatingStars>
+          <RatingNumber>
+            {currency(item.rating, { precision: 1, symbol: '' }).format()}
+          </RatingNumber>
+          <RatingStars>
+            <Rating
+              defaultValue={item.rating}
+              max={5}
+              precision={0.5}
+              size='small'
+              readOnly
+            />
+          </RatingStars>
         </RatingInfo>
         <ItemName>{item.name}</ItemName>
         <MerchantName>{item.merchant}</MerchantName>
         <Box>
-          <ItemPrice>{item.price}</ItemPrice>
+          <ItemPrice>{IDR(item.price).format()}</ItemPrice>
           <AddButton>ADD +</AddButton>
         </Box>
       </CardInfos>
