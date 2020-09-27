@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation'
 import DatePicker from '../components/DatePicker'
 import MealToggle from '../components/MealToggle'
 import Card from '../components/Card'
+import StickyCart from '../components/StickyCart'
 import {
   Text,
   SeparatorLine,
@@ -17,6 +18,7 @@ import items from '../data/items.json'
 const ProductList = () => {
   const [date, setDate] = useState('2020-09-27')
   const [meal, setMeal] = useState('lunch')
+  const [isCartVisible, setIsCartVisible] = useState(false)
 
   return (
     <>
@@ -31,9 +33,14 @@ const ProductList = () => {
       </Wrapper>
       <Wrapper>
         {items.map((item, index) => (
-          <Card key={index} item={item} />
+          <Card key={index} item={item} addToCart={setIsCartVisible} />
         ))}
       </Wrapper>
+      {isCartVisible && (
+        <CenterContent>
+          <StickyCart></StickyCart>
+        </CenterContent>
+      )}
     </>
   )
 }
