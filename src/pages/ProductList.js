@@ -11,6 +11,7 @@ import {
   SeparatorLine,
   CenterContent,
   Wrapper,
+  WhiteSpace,
 } from '../components/BaseStylings'
 
 import items from '../data/items.json'
@@ -31,16 +32,17 @@ const ProductList = () => {
       <Wrapper>
         <Text>{dayjs(date).format('dddd, DD MMMM YYYY')}</Text>
       </Wrapper>
-      <Wrapper>
+      <CenterContent>
         {items.map((item, index) => (
           <Card key={index} item={item} addToCart={setIsCartVisible} />
         ))}
-      </Wrapper>
+      </CenterContent>
       {isCartVisible && (
         <CenterContent>
           <StickyCart></StickyCart>
         </CenterContent>
       )}
+      <WhiteSpace height='40px' />
     </>
   )
 }

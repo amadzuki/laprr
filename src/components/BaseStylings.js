@@ -30,6 +30,7 @@ export const SeparatorLine = styled.div`
 export const CenterContent = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `
 
 export const Wrapper = styled.div`
@@ -40,4 +41,8 @@ export const Wrapper = styled.div`
 
 export const IconImg = styled.imgBox`
   height: 30px;
+`
+
+export const WhiteSpace = styled.divBox`
+  height: 24px;
 `
