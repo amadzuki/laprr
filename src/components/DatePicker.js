@@ -20,7 +20,7 @@ const DateButton = styled.button`
 
   &.chosenDate {
     border-radius: 50%;
-    background-color: #424749;
+    background-color: mainText;
   }
   &:focus {
     outline: none;
@@ -78,6 +78,7 @@ const DatePicker = ({ chosenDate, setDate }) => {
 
 DatePicker.propTypes = {
   setDate: PropTypes.func.isRequired,
+  chosenDate: PropTypes.string.isRequired,
 }
 
 export default DatePicker
