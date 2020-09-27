@@ -17,9 +17,9 @@ import {
 import items from '../data/items.json'
 
 const ProductList = () => {
-  const [date, setDate] = useState('2020-09-27')
+  const [date, setDate] = useState('2020-09-28')
   const [meal, setMeal] = useState('lunch')
-  const [isCartVisible, setIsCartVisible] = useState(false)
+  const [cartIsVisible, setCartIsVisible] = useState(false)
 
   return (
     <>
@@ -34,10 +34,10 @@ const ProductList = () => {
       </Wrapper>
       <CenterContent>
         {items.map((item, index) => (
-          <Card key={index} item={item} addToCart={setIsCartVisible} />
+          <Card key={index} item={item} addToCart={setCartIsVisible} />
         ))}
       </CenterContent>
-      {isCartVisible && (
+      {cartIsVisible && (
         <CenterContent>
           <StickyCart></StickyCart>
         </CenterContent>
