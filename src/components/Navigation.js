@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@xstyled/styled-components'
 
-import { Text, SubText } from './Texts'
+import { Text, SubText } from './BaseStylings'
 
 const NavigationStyled = styled.div`
   display: flex;

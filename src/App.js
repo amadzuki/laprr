@@ -8,7 +8,7 @@ const theme = {
     secondary: '#A23530',
     mainText: '#424749',
     subText: '#6E7679',
-    iconBackground: '#e2e4e4',
+    subtle: '#e2e4e4',
     outlineBorder: '#f1f1f2',
   },
   fonts: {

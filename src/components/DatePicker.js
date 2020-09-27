@@ -5,12 +5,12 @@ import styled from '@xstyled/styled-components'
 import dayjs from '../config/dayjs'
 import dateArray from '../data/dateArray.json'
 
-import { Text, SubText } from '../components/Texts'
+import { Text, SubText } from './BaseStylings'
 
 const DatePickerStyled = styled.div`
   display: flex;
   overflow-x: scroll;
-  margin: 24px 0;
+  margin: 24px 0 4px 0;
 `
 const DateButton = styled.button`
   padding: 7px 14px;

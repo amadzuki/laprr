@@ -2,18 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@xstyled/styled-components'
 
-import { Text } from '../components/Texts'
+import { Text } from './BaseStylings'
 
 const MealToggleStyled = styled.div`
   display: flex;
   justify-content: center;
+  margin: 4px 0 32px 0;
 `
 
 const MealButton = styled.button`
   background: none;
-  border: 2px solid grey;
+  border: 1px solid grey;
   border-radius: 5px;
   padding: 8px 64px;
+  box-shadow: 0 8px 10px 0 rgba(10, 31, 68, 0.1);
 
   &.lunch {
     border-right: none;
@@ -32,7 +34,6 @@ const MealButton = styled.button`
 `
 
 const MealText = styled(Text)`
-  font-size: 14px;
   margin: 0;
   color: ${(props) => props.color};
 `
@@ -44,7 +45,7 @@ const MealToggle = ({ currentMeal, setMeal }) => {
         className={currentMeal === 'lunch' ? 'lunch active' : 'lunch'}
         onClick={() => setMeal('lunch')}
       >
-        <MealText color={currentMeal === 'lunch' ? 'white' : 'mainText'}>
+        <MealText color={currentMeal === 'lunch' ? 'white' : 'grey'}>
           Lunch
         </MealText>
       </MealButton>
@@ -52,7 +53,7 @@ const MealToggle = ({ currentMeal, setMeal }) => {
         className={currentMeal === 'dinner' ? 'dinner active' : 'dinner'}
         onClick={() => setMeal('dinner')}
       >
-        <MealText color={currentMeal === 'dinner' ? 'white' : 'mainText'}>
+        <MealText color={currentMeal === 'dinner' ? 'white' : 'grey'}>
           Dinner
         </MealText>
       </MealButton>
