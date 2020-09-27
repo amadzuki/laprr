@@ -1,4 +1,4 @@
-import styled from '@xstyled/styled-components'
+import styled, { css, up } from '@xstyled/styled-components'
 
 export const Text = styled.p`
   font-family: primary;
@@ -36,7 +36,14 @@ export const CenterContent = styled.div`
 export const Wrapper = styled.div`
   margin: 0 16px;
   display: flex;
-  flex-wrap: wrap;
+  width: 335px;
+
+  ${up(
+    'sm',
+    css`
+      justify-content: center;
+    `
+  )}
 `
 
 export const IconImg = styled.imgBox`

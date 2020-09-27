@@ -29,9 +29,11 @@ const ProductList = () => {
         <SeparatorLine />
       </CenterContent>
       <MealToggle currentMeal={meal} setMeal={setMeal} />
-      <Wrapper>
-        <Text>{dayjs(date).format('dddd, DD MMMM YYYY')}</Text>
-      </Wrapper>
+      <CenterContent>
+        <Wrapper>
+          <Text>{dayjs(date).format('dddd, DD MMMM YYYY')}</Text>
+        </Wrapper>
+      </CenterContent>
       <CenterContent>
         {items.map((item, index) => (
           <Card key={index} item={item} addToCart={setCartIsVisible} />

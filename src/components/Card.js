@@ -7,7 +7,7 @@ import { Rating } from '@material-ui/lab'
 import { Text, SubText } from '../components/BaseStylings'
 
 const CardWrapper = styled.div`
-  margin-bottom: 24px;
+  margin: 24px;
   max-width: 335px;
   border-radius: 5px;
   box-shadow: 0 8px 10px 0 rgba(10, 31, 68, 0.1);
