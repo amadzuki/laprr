@@ -9,7 +9,7 @@ const ProductList = () => {
   return (
     <>
       <Navigation></Navigation>
-      <DatePicker setDate={setDate}></DatePicker>
+      <DatePicker setDate={setDate} chosenDate={date}></DatePicker>
       <p>chosen date: {dayjs(date).format('dddd, DD MMMM YYYY')}</p>
     </>
   )
