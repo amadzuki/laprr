@@ -32,7 +32,7 @@ const RatingNumber = styled(Text)`
   margin: 0 0 4px 0;
 `
 
-const RatingStars = styled.div`
+const RatingStarsBox = styled.div`
   display: flex;
   margin-left: 8px;
 `
@@ -65,7 +65,7 @@ const AddButton = styled.button`
   border-radius: 5px;
 `
 
-const Card = ({ item }) => {
+const Card = ({ item, addToCart }) => {
   return (
     <CardWrapper>
       <CardImg src={process.env.PUBLIC_URL + item.imagePath} />
@@ -74,7 +74,7 @@ const Card = ({ item }) => {
           <RatingNumber>
             {currency(item.rating, { precision: 1, symbol: '' }).format()}
           </RatingNumber>
-          <RatingStars>
+          <RatingStarsBox>
             <Rating
               defaultValue={item.rating}
               max={5}
@@ -82,13 +82,13 @@ const Card = ({ item }) => {
               size='small'
               readOnly
             />
-          </RatingStars>
+          </RatingStarsBox>
         </RatingInfo>
         <ItemName>{item.name}</ItemName>
         <MerchantName>{item.merchant}</MerchantName>
         <Box>
           <ItemPrice>{IDR(item.price).format()}</ItemPrice>
-          <AddButton>ADD +</AddButton>
+          <AddButton onClick={() => addToCart(true)}>ADD +</AddButton>
         </Box>
       </CardInfos>
     </CardWrapper>

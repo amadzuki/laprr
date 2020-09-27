@@ -1,16 +1,12 @@
 import React from 'react'
 import styled from '@xstyled/styled-components'
 
-import { Text, SubText } from './BaseStylings'
+import { Text, SubText, IconImg } from './BaseStylings'
 
 const NavigationStyled = styled.div`
   display: flex;
   align-items: center;
   margin: 16px 0 0 16px;
-`
-
-const IconImg = styled.imgBox`
-  height: 30px;
 `
 
 const TextsGroup = styled.div`
@@ -44,7 +40,7 @@ const Navigation = () => {
         <DestinationBox>
           <DestinationText>Tokopedia Tower</DestinationText>
           <IconImg
-            src={`${process.env.PUBLIC_URL}/icons/arrow-down.svg`}
+            src={`${process.env.PUBLIC_URL}/icons/arrow-down-ios.svg`}
             alt='arrow down icon'
             height='16px'
           />

@@ -5,13 +5,19 @@ export const Text = styled.p`
   font-weight: 600;
   font-size: 14px;
   color: mainText;
+  &.white {
+    color: subtle;
+  }
 `
 
 export const SubText = styled.p`
   font-family: primary;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 8px;
   color: subText;
+  &.white {
+    color: subtle;
+  }
 `
 
 export const SeparatorLine = styled.div`
@@ -30,4 +36,8 @@ export const Wrapper = styled.div`
   margin: 0 16px;
   display: flex;
   flex-wrap: wrap;
+`
+
+export const IconImg = styled.imgBox`
+  height: 30px;
 `
