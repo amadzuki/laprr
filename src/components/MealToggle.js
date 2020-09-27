@@ -1,17 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import styled from '@xstyled/styled-components'
+import styled, { keyframes } from '@xstyled/styled-components'
+import { display } from '@xstyled/system'
 
 import { Text } from './BaseStylings'
 
+const animateOnAppear = keyframes`
+0% {
+    opacity: 0;
+    top: 100px;
+  }
+100% {
+    opacity: 1;
+    top: 136px;
+  }
+`
+
 const MealToggleStyled = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 4px 0 32px 0;
+  position: fixed;
+  top: 136px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 2;
+  animation: ${animateOnAppear} 0.5s ease-in-out;
+  ${display}
 `
 
 const MealButton = styled.button`
-  background: none;
+  display: inline-block;
+  background: white;
   border: 1px solid grey;
   border-radius: 5px;
   padding: 8px 64px;
@@ -39,8 +56,20 @@ const MealText = styled(Text)`
 `
 
 const MealToggle = ({ currentMeal, setMeal }) => {
+  const [display, setDisplay] = useState('')
+  let position = window.pageYOffset
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset <= position) {
+      if (display !== 'flex') {
+        setDisplay('flex')
+      }
+    } else {
+      setDisplay('none')
+    }
+    position = window.pageYOffset
+  })
   return (
-    <MealToggleStyled>
+    <MealToggleStyled display={display}>
       <MealButton
         className={currentMeal === 'lunch' ? 'lunch active' : 'lunch'}
         onClick={() => setMeal('lunch')}

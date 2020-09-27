@@ -53,13 +53,12 @@ export const IconImg = styled.imgBox`
 export const WhiteSpace = styled.divBox`
   height: 24px;
   background-color: white;
-  position: relative;
-  z-index: 0;
+  z-index: 1;
 `
 
 export const StickyTop = styled.div`
   position: fixed;
   top: 0;
   background-color: white;
-  z-index: 1;
+  z-index: 3;
 `

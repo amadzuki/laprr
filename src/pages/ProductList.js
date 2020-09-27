@@ -31,6 +31,7 @@ const ProductList = () => {
       </StickyTop>
       <WhiteSpace height='132px' />
       <MealToggle currentMeal={meal} setMeal={setMeal} />
+      <WhiteSpace height='60px' />
       <CenterContent>
         <Wrapper>
           <Text>{dayjs(date).format('dddd, DD MMMM YYYY')}</Text>
