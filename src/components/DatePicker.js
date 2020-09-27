@@ -11,6 +11,7 @@ const DatePickerStyled = styled.div`
   display: flex;
   overflow-x: scroll;
   margin: 24px 0 4px 0;
+  width: 100vh;
 `
 const DateButton = styled.button`
   padding: 7px 14px;

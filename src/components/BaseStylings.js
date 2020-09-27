@@ -21,7 +21,7 @@ export const SubText = styled.p`
 `
 
 export const SeparatorLine = styled.div`
-  width: 95vw;
+  width: 100vw;
   border-bottom: 1px solid;
   border-bottom-color: subtle;
   box-shadow: 0 8px 10px 0 rgba(10, 31, 68, 0.1);
@@ -52,4 +52,14 @@ export const IconImg = styled.imgBox`
 
 export const WhiteSpace = styled.divBox`
   height: 24px;
+  background-color: white;
+  position: relative;
+  z-index: 0;
+`
+
+export const StickyTop = styled.div`
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 `

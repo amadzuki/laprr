@@ -12,6 +12,7 @@ import {
   CenterContent,
   Wrapper,
   WhiteSpace,
+  StickyTop,
 } from '../components/BaseStylings'
 
 import items from '../data/items.json'
@@ -23,11 +24,12 @@ const ProductList = () => {
 
   return (
     <>
-      <Navigation></Navigation>
-      <DatePicker setDate={setDate} chosenDate={date} />
-      <CenterContent>
+      <StickyTop>
+        <Navigation></Navigation>
+        <DatePicker setDate={setDate} chosenDate={date} />
         <SeparatorLine />
-      </CenterContent>
+      </StickyTop>
+      <WhiteSpace height='132px' />
       <MealToggle currentMeal={meal} setMeal={setMeal} />
       <CenterContent>
         <Wrapper>
