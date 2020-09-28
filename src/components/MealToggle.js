@@ -56,7 +56,7 @@ const MealText = styled(Text)`
 `
 
 const MealToggle = ({ currentMeal, setMeal }) => {
-  const [display, setDisplay] = useState('')
+  const [display, setDisplay] = useState('flex')
   let position = window.pageYOffset
   window.addEventListener('scroll', () => {
     if (window.pageYOffset <= position) {

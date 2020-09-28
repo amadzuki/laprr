@@ -6,6 +6,7 @@ import DatePicker from '../components/DatePicker'
 import MealToggle from '../components/MealToggle'
 import Card from '../components/Card'
 import StickyCart from '../components/StickyCart'
+import Modal from '../components/Modal'
 import {
   Text,
   SeparatorLine,
@@ -21,6 +22,7 @@ const ProductList = () => {
   const [date, setDate] = useState('2020-09-28')
   const [meal, setMeal] = useState('lunch')
   const [cartIsVisible, setCartIsVisible] = useState(false)
+  const [modalIsShown, setModalIsShown] = useState(false)
 
   return (
     <>
@@ -44,10 +46,11 @@ const ProductList = () => {
       </CenterContent>
       {cartIsVisible && (
         <CenterContent>
-          <StickyCart></StickyCart>
+          <StickyCart setModalIsShown={setModalIsShown}></StickyCart>
         </CenterContent>
       )}
       <WhiteSpace height='40px' />
+      <Modal isShown={modalIsShown} setModalIsShown={setModalIsShown}></Modal>
     </>
   )
 }

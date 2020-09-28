@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import styled, { keyframes } from '@xstyled/styled-components'
 
 import { Text, SubText, IconImg } from './BaseStylings'
@@ -41,9 +41,11 @@ const Narration = styled(SubText)`
   margin: 0;
 `
 
-const IconsBox = styled.div`
+const IconButton = styled.button`
   display: flex;
   align-items: center;
+  border: none;
+  background: none;
 `
 
 const BlurredBottom = styled.div`
@@ -51,7 +53,7 @@ const BlurredBottom = styled.div`
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
 `
 
-const StickyCart = (props) => {
+const StickyCart = ({ setModalIsShown }) => {
   return (
     <StickyCartStyled>
       <StickyCartBox>
@@ -59,7 +61,7 @@ const StickyCart = (props) => {
           <ItemsCarted className='white'>5 items | Rp 125.000</ItemsCarted>
           <Narration className='white'>Termasuk ongkos kirim</Narration>
         </CartInfo>
-        <IconsBox>
+        <IconButton onClick={() => setModalIsShown(true)}>
           <IconImg
             src={process.env.PUBLIC_URL + '/icons/shopping-cart.svg'}
             alt='shopping cart icon'
@@ -70,13 +72,15 @@ const StickyCart = (props) => {
             alt='arrow right ios icon'
             height={12}
           />
-        </IconsBox>
+        </IconButton>
       </StickyCartBox>
       <BlurredBottom></BlurredBottom>
     </StickyCartStyled>
   )
 }
 
-// StickyCart.propTypes = {}
+StickyCart.propTypes = {
+  setModalIsShown: PropTypes.func.isRequired,
+}
 
 export default StickyCart
