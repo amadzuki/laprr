@@ -61,4 +61,6 @@ export const StickyTop = styled.div`
   top: 0;
   background-color: white;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
 `
