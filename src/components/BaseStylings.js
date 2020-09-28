@@ -50,8 +50,7 @@ export const IconImg = styled.imgBox`
   height: 30px;
 `
 
-export const WhiteSpace = styled.divBox`
-  height: 24px;
+export const WhiteSpace = styled.box`
   background-color: white;
   z-index: 1;
 `
@@ -63,4 +62,5 @@ export const StickyTop = styled.div`
   z-index: 3;
   display: flex;
   flex-direction: column;
+  width: 100%;
 `

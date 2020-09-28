@@ -113,6 +113,7 @@ const Modal = ({ isShown, setModalIsShown }) => {
               name='search'
               value={input}
               onChange={(event) => handleOnChange(event.target.value)}
+              autoFocus
             ></InputBox>
           </InputForm>
         </div>
