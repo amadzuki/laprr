@@ -22,5 +22,53 @@
     "merchant": "by Kulina · Downtown Lunch",
     "price": 50000,
     "imagePath": "/foods/jalapenos-sandwich.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Coffice Cream",
+    "rating": 3.5,
+    "merchant": "by Kulina · Moonbucks",
+    "price": 100000,
+    "imagePath": "/foods/coffice-cream.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Das Brotchen",
+    "rating": 4.0,
+    "merchant": "by Kulina · Die Bäkerei",
+    "price": 50000,
+    "imagePath": "/foods/das-brotchen.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Full Chicken Soup",
+    "rating": 3.0,
+    "merchant": "by Kulina · Mie Sayuti",
+    "price": 70000,
+    "imagePath": "/foods/full-chicken-soup.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Orange Jerky",
+    "rating": 5.0,
+    "merchant": "by Kulina · Fruity",
+    "price": 10000,
+    "imagePath": "/foods/orange-jerky.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Pomagranate Steak",
+    "rating": 5.0,
+    "merchant": "by Kulina · Downtown Lunch",
+    "price": 30000,
+    "imagePath": "/foods/pomagranate-steak.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Psycho Borgar",
+    "rating": 1.0,
+    "merchant": "by Kulina · Saikou",
+    "price": 700000,
+    "imagePath": "/foods/psycho-borgar.jpg"
   }
 ]
