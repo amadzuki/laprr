@@ -33,7 +33,7 @@ const ModalWindow = styled.div`
   z-index: 6;
   display: ${(props) => props.display};
   padding: 24px;
-  overflow-y: scroll;
+  overflow-y: hidden;
 `
 const CloseButtonBox = styled.div`
   display: flex;
