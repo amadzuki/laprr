@@ -135,6 +135,7 @@ const Modal = ({ isShown, setModalIsShown }) => {
 
 Modal.propTypes = {
   isShown: PropTypes.bool.isRequired,
+  setModalIsShown: PropTypes.func.isRequired,
 }
 
 export default Modal

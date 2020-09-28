@@ -41,7 +41,7 @@ const ProductList = () => {
       </CenterContent>
       <CenterContent>
         {items.map((item, index) => (
-          <Card key={index} item={item} addToCart={setCartIsVisible} />
+          <Card key={index} item={item} setCartIsVisible={setCartIsVisible} />
         ))}
       </CenterContent>
       {cartIsVisible && (

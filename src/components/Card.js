@@ -65,7 +65,7 @@ const AddButton = styled.button`
   border-radius: 5px;
 `
 
-const Card = ({ item, addToCart }) => {
+const Card = ({ item, setCartIsVisible }) => {
   return (
     <CardWrapper>
       <CardImg src={process.env.PUBLIC_URL + item.imagePath} />
@@ -88,7 +88,7 @@ const Card = ({ item, addToCart }) => {
         <MerchantName>{item.merchant}</MerchantName>
         <Box>
           <ItemPrice>{IDR(item.price).format()}</ItemPrice>
-          <AddButton onClick={() => addToCart(true)}>ADD +</AddButton>
+          <AddButton onClick={() => setCartIsVisible(true)}>ADD +</AddButton>
         </Box>
       </CardInfos>
     </CardWrapper>
@@ -97,6 +97,7 @@ const Card = ({ item, addToCart }) => {
 
 Card.propTypes = {
   item: PropTypes.object.isRequired,
+  setCartIsVisible: PropTypes.func.isRequired,
 }
 
 export default Card
