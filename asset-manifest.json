@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/laprr/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/laprr/static/js/main.c34ef2c3.chunk.js",
+    "main.js.map": "/laprr/static/js/main.c34ef2c3.chunk.js.map",
+    "runtime-main.js": "/laprr/static/js/runtime-main.63044940.js",
+    "runtime-main.js.map": "/laprr/static/js/runtime-main.63044940.js.map",
+    "static/js/2.4389c968.chunk.js": "/laprr/static/js/2.4389c968.chunk.js",
+    "static/js/2.4389c968.chunk.js.map": "/laprr/static/js/2.4389c968.chunk.js.map",
+    "index.html": "/laprr/index.html",
+    "precache-manifest.bb84b3bf52f8c72828554a19f0a31e1e.js": "/laprr/precache-manifest.bb84b3bf52f8c72828554a19f0a31e1e.js",
+    "service-worker.js": "/laprr/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/laprr/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.4389c968.chunk.js.LICENSE.txt": "/laprr/static/js/2.4389c968.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.63044940.js",
+    "static/js/2.4389c968.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.c34ef2c3.chunk.js"
+  ]
+}
