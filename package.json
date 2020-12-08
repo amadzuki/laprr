@@ -1,8 +1,8 @@
 {
-  "name": "kulina",
+  "name": "laprr",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://amadzuki.github.io/03398241db64f386dc27bb8812419a9c0b329318/",
+  "homepage": "https://amadzuki.github.io/laprr/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/lab": "^4.0.0-alpha.56",

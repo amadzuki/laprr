@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Fancy Fruity Toast",
     "rating": 4.5,
-    "merchant": "by Kulina · Uptown Lunch",
+    "merchant": "by Laprr · Uptown Lunch",
     "price": 35000,
     "imagePath": "/foods/fancy-fruity-toast.jpg"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Snownbrown Cupcake",
     "rating": 4.0,
-    "merchant": "by Kulina · D'Patisserie",
+    "merchant": "by Laprr · D'Patisserie",
     "price": 15000,
     "imagePath": "/foods/snownbrown-cupcake.jpg"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Jalapenos Sandwich",
     "rating": 5.0,
-    "merchant": "by Kulina · Downtown Lunch",
+    "merchant": "by Laprr · Downtown Lunch",
     "price": 50000,
     "imagePath": "/foods/jalapenos-sandwich.jpg"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "name": "Coffice Cream",
     "rating": 3.5,
-    "merchant": "by Kulina · Moonbucks",
+    "merchant": "by Laprr · Moonbucks",
     "price": 100000,
     "imagePath": "/foods/coffice-cream.jpg"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "Das Brotchen",
     "rating": 4.0,
-    "merchant": "by Kulina · Die Bäkerei",
+    "merchant": "by Laprr · Die Bäkerei",
     "price": 50000,
     "imagePath": "/foods/das-brotchen.jpg"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "name": "Full Chicken Soup",
     "rating": 3.0,
-    "merchant": "by Kulina · Mie Sayuti",
+    "merchant": "by Laprr · Mie Sayuti",
     "price": 70000,
     "imagePath": "/foods/full-chicken-soup.jpg"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "name": "Orange Jerky",
     "rating": 5.0,
-    "merchant": "by Kulina · Fruity",
+    "merchant": "by Laprr · Fruity",
     "price": 10000,
     "imagePath": "/foods/orange-jerky.jpg"
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "name": "Pomagranate Steak",
     "rating": 5.0,
-    "merchant": "by Kulina · Downtown Lunch",
+    "merchant": "by Laprr · Downtown Lunch",
     "price": 30000,
     "imagePath": "/foods/pomagranate-steak.jpg"
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "name": "Psycho Borgar",
     "rating": 1.0,
-    "merchant": "by Kulina · Saikou",
+    "merchant": "by Laprr · Saikou",
     "price": 700000,
     "imagePath": "/foods/psycho-borgar.jpg"
   }
