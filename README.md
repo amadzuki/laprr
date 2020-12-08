@@ -1,6 +1,6 @@
 ## Laprr - Food Delivery
 
-> A part of mobile view page based on designs using ReactJS
+> Mobile first design of online food delivery website
 
 ## Tech Stacks
 
